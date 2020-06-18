@@ -1,0 +1,64 @@
+/* Regole generali */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+/* Classi di appoggio */
+.hidden {
+    max-height: 0;
+    max-width: 0;
+    opacity: 0;
+    transition: max-width .7s, opacity .5s ease .5s;
+    overflow: hidden;
+}
+
+.show {
+    max-width: 1000px;
+    opacity: 1;
+    transition: max-width 1s, opacity .5s ease .5s;
+}
+
+/* Contenuto */
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #254441;
+    color: #111;
+}
+
+.jumbo {
+    padding: 30px 3%;
+    min-width: 500px;
+    background-color: #B4D0BA;
+    text-align: center;
+    border-radius: 15px;
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+#btn {
+    margin: 20px 0;
+}
+
+.positivo {
+    background-color: green;
+}
+
+.negativo {
+    background-color: red;
+}
+
+.neutro {
+    background-color: blue;
+}
